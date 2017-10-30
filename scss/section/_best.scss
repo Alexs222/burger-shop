@@ -1,0 +1,60 @@
+.best {
+    background-image: url(../img/best/webest_bg.png); 
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    position: relative;
+}
+
+.container__best {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section__title--best {
+      color: $dark;
+      padding-top: 53px;
+      padding-bottom: 61px;
+  }
+
+  .best-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    padding-bottom: 15%;
+    align-items: baseline;
+
+    .best__item {   
+        display: flex;
+        flex: 1;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+         align-items: stretch;
+         align-content: stretch;
+         margin: 0 10px;
+        
+        &_title {
+            font-family: 'Lifehack';
+            font-size: 24px;
+            font-weight: 500;
+            padding-top: 31px;
+            padding-bottom: 10px;
+            line-height: 28px;
+            // text-align: center;
+        }
+
+        &_text {
+            font-family: 'Ubuntu';
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 2;
+            // text-align: center;
+        }
+    }
+  }
+
