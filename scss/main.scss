@@ -1,6 +1,27 @@
 
+// color
+$white: #fff;
+$yellow: #f9b43b;
+// $color-main: #2f3234;
+$orange: #e35028;
+$red: #e45028;
+$red-hover: #c1401e;
+$dark: #2f3234;
+
+// resolutions
+$desktop: 1200px;
+$laptop: 992px;
+$tablets: 768px;
+$phones: 480px;
+
+//normalize
+@import "config/_normalize";
+
+// media
+@import "config/_media";
+
 //config
-@import "config/_variables";
+// @import "config/_variables";
 @import "config/_mixins";
 
 //base
@@ -9,9 +30,24 @@
 @import "layout/_adjustment";
 
 //section
-@import "section/_welcome";
+@import "section/_section__title";
+@import "section/_btn";
+@import "section/_hero";
+@import "section/_header";
+@import "section/_nav";
+@import "section/_hamburger-menu";
+@import "section/_hamburger-menu-link";
 @import "section/_best";
 @import "section/_about";
+@import "section/_team";
+@import "section/_team-acco";
+@import "section/_menu";
+// @import "section/_menu-acco";
+@import "section/_map";
+@import "section/_order";
+@import "section/_fixed-menu";
+
+
 
 
 

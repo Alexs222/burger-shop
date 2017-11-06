@@ -1,0 +1,160 @@
+.menu {
+    background: url(../img/menu/menu_bg.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.section__title--menu {
+    position: absolute;
+    color: $white;
+    left: rem(94px);
+    top: rem(50px);
+}
+
+.menu-acco {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+}
+
+.menu-acco__item {
+    height: 100%;
+    &--active {
+        .menu-acco__content {
+            color: $yellow;
+            width: rem(540px);
+        }
+        .menu-acco__text {
+            display: block;
+        }
+    }
+}
+
+.menu-acco__trigger {
+    width: rem(80px);
+    display: block;
+    height: 100%;
+    float: left;
+    // @include cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    position: relative;
+}
+
+.menu-acco__trigger-text {
+    font-size: rem(40px);
+    color: #fff;
+    // @include gagalin;
+    font-family: 'Gagalin';
+    font-size: rem(40px);
+
+
+    text-align: center;
+    white-space: nowrap;
+    position: absolute;
+    transform: rotate(-90deg) translateY(-50%);
+    transform-origin: 0 0;
+    left: 50%;
+    top: 100%;
+    margin-top: rem(-20px);
+}
+
+.menu-acco__content {
+    height: 100%;
+    float: left;
+    background: rgba(#2f3234, .93);
+    width: 0;
+    overflow: hidden;
+}
+
+.menu-acco__text {
+    // @include ubuntu(light);
+    color: $white;
+    font-size: rem(14px);
+    color: #fff;
+    padding: rem(60px) rem(30px);
+    width: 100%;
+    line-height: 1.8;
+    display: none;
+}
+
+// .menu {
+//     background: url(../img/menu/menu_bg.jpg) center center no-repeat;
+//     background-size: cover;
+//     position: relative;
+// }
+
+// .section__title--menu {
+//     position: absolute;
+//     color: $white;
+//     left: rem(94px);
+//     top: rem(50px);
+// }
+
+// .menu__contaner {
+//     position: absolute;
+//     top: 0;
+//     bottom: 0;
+//     right: 0;
+//     width: 71%;
+//     background: rgba(#2f3234, .93);
+//     display: flex;
+//     flex-direction: row-reverse;
+// }
+
+// .menu-acco {
+//     display: flex;
+// }
+
+// .menu-acco__item {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100%;
+// }
+
+// .menu-acco__bg {
+//     width: rem(80px);
+//     height: 100%;
+//     background-size: cover;
+//     position: relative;
+// }
+
+// .menu-acco__trigger {
+//     width: 100%;
+//     height: 100%;
+//     position: absolute;
+//     color: $white;
+//     transform: rotate(-90deg);
+//     font-family: 'Gagalin';
+//     font-size: rem(40px);
+//     text-decoration: none;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+// .menu-acco__content {
+//     width: 100%;
+//     display: none;
+//     padding-left: rem(35px);
+//     padding-top: rem(60px);
+//     padding-right: rem(10px);
+//     color: $white;
+//     align-self: flex-start;
+// }
+
+// .menu-acco__item--active .menu-acco__content {
+//     display: block;
+// }
+
+
+
+
+
+
+
+

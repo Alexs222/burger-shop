@@ -1,0 +1,164 @@
+
+
+
+
+// Если делать с блоком team__acco
+
+.team {
+    background: url("../img/team/team_bg.jpg") 50% no-repeat;
+    background-size: cover;
+    position: relative;
+    .section__title {
+        margin-bottom: 18%;
+    }
+}
+
+// .team__content {
+//     text-align: center;
+// }
+
+.team__section {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    background: rgba(#2f3234, .93);
+    // padding: 5% 2% 0 7%;
+    padding: 0 8% 0 4%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    // @include tablets {
+    //     width: 100%;
+    //     padding: 0;
+    // }
+}
+         
+
+// Если делать без блока team__acco
+
+
+// .team {
+//     background-image: url(../img/team/team_bg.jpg);
+//     background-repeat: no-repeat;
+//     background-position: 50%;
+//     background-size: cover;
+//     position: relative;
+// }
+// .team__section {
+//     position: absolute;
+//     top: 0;
+//     left: 50%;
+//     height: 100%;
+//     width: 50%; 
+//     background-color: #303234;
+//     opacity: 0.93;
+//     .section__title {
+//         margin-bottom: 12%;
+//     }
+// }
+// .team__content {
+//     margin-left: rem(80px);
+// }
+// .team-acco {
+//     display: flex;
+//     flex-direction: column;
+// }
+// .team-acco__item {
+//     margin-bottom: rem(35px);
+// }
+// .team-acco__trigger {
+//     font-family: 'Gagalin';
+//     font-weight: 400;
+//     font-size: rem(14px);
+//     color: $white;
+//     margin-bottom: rem(17px);
+//     display: flex;
+//     align-items: center;
+//     text-decoration: none;
+//     &::before {
+//         content: '';
+//         border-top: rem(6px) solid $yellow;
+//         border-left: rem(6px) solid transparent;
+//         border-bottom: rem(0px) solid transparent;
+//         border-right: rem(6px) solid transparent;     
+//         margin-right: rem(10px);
+//     }
+// }
+//     .team-acco__item--active {
+//         .team-acco__trigger {
+//         color: $yellow;
+//         &::before {
+//             content: '';
+//             border-top: rem(0px) solid transparent;
+//             border-left: rem(6px) solid transparent;
+//             border-bottom: rem(6px) solid $yellow;
+//             border-right: rem(6px) solid transparent; 
+//             margin-right: rem(10px);
+//         }
+//     }
+//     .team-acco__content {
+//         height: 100%;
+//     }
+// }
+// .team-acco__content {
+//     display: flex;
+//     align-items: flex-start;
+//     margin-left: rem(18px);
+//     height: 0;
+//     overflow: hidden;
+// }
+// .team-acco__pic {
+//     width: rem(100px);
+//     height: rem(100px);
+//     overflow: hidden;
+//     background-size: cover;
+//     background-position: 50% 50%;
+//     background-repeat: no-repeat;
+//     background-color: #f5f5f5;
+//     border-radius: 50%; 
+//     margin-right: rem(19px);
+// }
+// .team-acco__text {
+//     width: rem(210px);
+// }
+// .team-acco__title {
+//     font-size: rem(14px);
+//     font-weight: bold;
+//     color: $white;
+//     margin-bottom: rem(15px);
+// }
+// .team-acco__text-content {
+//     font-size: rem(14px);
+//     font-weight: 300;
+//     color: $white;
+// }
+
+            
+
+            
+
+        
+    
+
+       
+    
+
+
+
+
+
+
+// //если делать через flex
+
+// // .team__block {
+// //     height: 100%;
+// //     width: 50%;
+// //     // filter: grayscale(100%);
+// //     background-color: #303234;
+// //     opacity: 0.93;
+
+// // }

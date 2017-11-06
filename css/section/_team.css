@@ -1,0 +1,6 @@
+.team {
+  background-image: url(../img/team/team_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  position: relative; }

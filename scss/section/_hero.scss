@@ -1,0 +1,455 @@
+
+.hero {
+  background: url("../img/img_welcome/welcome_bg.jpg") center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero__content {
+  display: flex;
+  
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 20%;
+  }
+}
+
+.hero__container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 15%;
+}
+
+.hero__left,
+.hero__right {
+  // float: left;
+  width: 50%;
+  @include tablets() {
+    float: none;
+    width: auto;
+  }
+}
+
+  .hero__left {
+  margin-right: rem(20px);
+}
+
+.hero__right {
+  padding-top: rem(115px);
+  @include tablets() {
+    // padding-top: 0;
+  }
+}
+
+.hero__desc {
+  font-size: rem(65px);
+  color: white;
+  font-family: 'Lifehack';
+  // @include lifehack;
+  text-transform: lowercase;
+  line-height: 1em;
+}
+
+.hero__img {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.down-arrow {
+  position: absolute;
+  bottom: rem(20px);
+  left: 50%;
+  width: rem(60px);
+  transform: translateX(-50%);
+  transition: .3s;
+  height: rem(60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    .down-arrow__icon {
+      margin-top: rem(-15px);
+      width: rem(45px);
+      height: rem(45px);
+    }
+  }
+}
+
+.down-arrow__icon {
+  width: rem(40px);
+  height: rem(40px);
+  transition: .3s;
+  // fill: #fff;
+}
+
+.down-arrow:hover {
+    transform: scale(2 ,2);    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//   .container__welcome {
+
+//     height: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//   }
+
+//   .welcome-scroll {
+//     text-align: center;
+//     position: absolute;
+//     top: rem(595px);;
+//     left: 50%;
+
+//     &:hover {
+//       transform: translate(rem(5px), rem(5px)); 
+//     }
+// }
+
+
+//   .welcome-content {
+//     width: 100%;
+//     display: flex;
+//     flex-wrap: wrap;
+//     flex-grow: 1;
+//     align-items: center;
+//     padding-bottom: 15%;
+//   }
+  
+
+//   .welcome__img, .welcome__description {
+//     // flex-basis: 50%;
+//     flex: 1;
+//     display: flex;    
+//   }
+
+//   .welkome-content__image {
+//     max-width: 100%;
+//     max-height: 100%;
+//     display: inline-block;
+//     position: relative;
+//     left: 50%;
+//     transform: translateX(-50%);
+//   }
+  
+//   .welcome__description {
+//     flex-direction: column;
+//     justify-content: center;
+//   }
+    
+//   .section__description-text {
+//     color: $white;
+//     font-family: 'Lifehack';
+//     font-size: rem(65px);
+//     font-weight: 500;
+//     line-height: 1;
+//   }
+
+//   .pointer__list {
+//             position: fixed;
+//             top: rem(93px);
+//             left: 90%;    
+//         }
+    
+// .pointer__item {
+//     display: block;
+//     width: rem(14px);
+//     height: rem(14px);
+//     border: none;
+//     border-radius: 50%;
+//     color: white;
+//     position: relative;
+//     margin-bottom: rem(7px);
+//     &::after {
+//         position: absolute;
+//         content: '';
+//         top: 0;
+//         left:0;
+//         right: 0;
+//         bottom: 0;
+//         margin: auto;
+//         display: block;
+//         background-color: $white;
+//         width: rem(6px);
+//         height: rem(6px);
+//         border-radius: 50%;
+//     }
+
+//     &--active {
+//         border: rem(1px) solid $white;
+//     }
+// }
+
+
+
+// .container__welcome {
+//     position: relative;
+//     max-width: rem(1100px);
+//     background: url(../img/img_welcome/video-bg.jpg) 50% 50% no-repeat;
+//     height: 100%;
+//     width: 100%;
+//     // height: 100vh;
+//     // width: 100vw;
+//     min-height: rem(650px);
+//     background-size: cover;
+
+//     &::after {
+//         content: '';
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         // bottom: 0;
+//         // right: 0;
+//         background: url(../img/img_welcome/texture.png);
+//         width: 100%;
+//         height: 100%;
+//         opacity: 0.1;
+//         // min-height: rem(650px);
+//     }
+
+//     .welcome-header {
+//         display: flex;
+//         justify-content: space-between;   
+//         align-items: center;
+//         max-width: rem(940px);
+//         padding-top: rem(12px);
+//         margin: 0 auto;
+//         margin-bottom: rem(47px);
+        
+
+//         .welcome-header__logo {   
+//             // flex: 3 3 rem(100px); 
+//             flex: 3; 
+
+//         }
+            
+//         .welcome-header__list {
+//             display: flex;
+//             justify-content: space-between;            
+//             // list-style-type: disc;
+//             color: $white;
+//             font-weight: 500;
+//             text-transform: uppercase;
+//             // position: relative;
+//             z-index: 999; 
+            
+//             .welcome-header__link {
+//                 color: $white;
+//                 font-weight: 500;
+//                 margin-left: rem(15px);
+//             }
+
+//             .welcome-header__item::after { 
+//                 content:'\2022'; 
+//                 vertical-align: middle;
+//                 margin-left: rem(15px);
+//             }
+            
+//             .welcome-header__item:last-child::after {
+//                 content: '';
+//             }
+            
+            
+//         }
+
+//         .welcome-header__botton {
+//             display: block;
+//             border: none;
+//             background: $red;
+//             // border-width: rem(3px);
+//             // border-color: #ec1e79;
+//             // border-style: solid;
+//             width: rem(97px);
+//             height: rem(35px);
+//             border-radius: rem(5px);
+//             color: $white;
+//             font-weight: 500;                        
+//             text-transform: uppercase;
+//             cursor: pointer;
+//             // position: relative;
+//             z-index: 999;
+//             text-align: center;
+//             line-height: rem(35px);
+
+//             &:hover {
+//                 background: $red-hover;                
+//             }
+//         }
+//     }
+
+//     .welcome-nav {
+//         position: absolute;
+//         top: rem(93px);
+//         left: rem(1040px);
+
+//         // display: flex;
+//         // flex-direction: column;
+//         // justify-content: center;
+//         // align-items: center;
+//     }
+
+//     .welcome-nav__item {
+//         // position: absolute;
+//         // top: 0;
+//         // left: rem(1040px);
+//         display: block;
+//         width: rem(14px);
+//         height: rem(14px);
+//         border: none;
+//         border-radius: 50%;
+//         color: white;
+//         position: relative;
+//         margin-bottom: rem(7px);
+//         &::after {
+//             position: absolute;
+//             content: '';
+//             top: 0;
+//             left:0;
+//             right: 0;
+//             bottom: 0;
+//             margin: auto;
+//             display: block;
+//             background-color: #fff;
+
+//             width: rem(6px);
+//             height: rem(6px);
+//             border-radius: 50%;
+//         }
+
+//         &--active {
+//             border: rem(1px) solid $white;
+//         }
+        
+
+//     }
+
+//     .welkome-content {
+//         max-width: rem(900px);
+//         display: flex;
+//         // justify-content: center;
+//         margin-left: rem(96px);
+//         margin-bottom: rem(38px);
+
+//         &__img {
+//             max-width: rem(453px);
+//             min-height: rem(420px);
+//             height: 100%;
+//             width: 100%;
+//             // height: 100vh;
+//             // width: 100vw;
+//             background: url(../img/img_welcome/drops.png);
+//             background-repeat: no-repeat;
+//             background-size: cover;
+//             // margin-right: rem(12px);
+//             // margin-top: rem(-13px);
+//             // margin-left: rem(33px);
+//             background-size: contain;
+//             margin-right: rem(10px);
+            
+
+//                 .welkome-content__wrap {
+//                     width: rem(414px);
+//                     height: rem(420px);
+//                     margin-top: rem(-60px);
+//                     margin-left: rem(33px);
+
+//                 }
+//             }
+            
+        
+
+//         // &__img {
+//         //     max-width: rem(414px);
+//         //     position: relative;
+//         //     // background: url(../img/img_welcome/burger.png) 50% 50% no-repeat;
+//         //     height: 100%;
+//         //     width: 100%;
+//         //     // height: 100vh;
+//         //     // width: 100vw;
+//         //     min-height: rem(420px);
+//         //     background-size: cover;
+//         //     margin-right: rem(12px);
+//         //     margin-top: rem(-13px);
+//         //     margin-left: rem(33px);
+        
+//         //     &::after {
+//         //         content: '';
+//         //         position: absolute;
+//         //         top: 0;
+//         //         left: 0;
+//         //   
+//                // bottom: 0;
+//         //         // right: 0;
+//         //         background: url(../img/img_welcome/drops.png);
+//         //         background-repeat: no-repeat;
+//         //         width: 100%;
+//         //         height: 100%;
+//         //         // height: 100vh;
+//         //         // width: 100vw;
+    
+//         //         background-size: contain;
+//         //         // opacity: 0.1;
+//         //         // min-height: rem(650px);
+//         //         // z-index: 999;
+//         //     }
+            
+//         // }
+
+//         &__title {
+//             max-width: rem(415px);
+
+//             &__work {
+//                 font-family: 'Gagalin', Arial;
+//                 font-size: rem(72px);
+//                 font-weight: 400;
+//                 color: $yellow;
+//                 margin-top: rem(57px);
+//                 margin-bottom: rem(18px);
+//             }
+
+//             &__nat {
+//                 font-family: 'Lifehack', Arial;
+//                 font-size: rem(65px);
+//                 font-weight: 500;
+//                 color: $white;
+//                 line-height: 1;
+//             }
+//         }
+//     }
+
+//     .welcome-scroll {
+//         text-align: center;
+//         position: relative;
+//         z-index: 999;
+//     }
+// }
+    
+
+// .welcome {
+//     background-image: url(../img/img_welcome/welcome_bg.jpg); 
+//     background-repeat: no-repeat;
+//     background-position: 50%;
+//     background-size: cover;
+//     position: relative;
+// }
+
