@@ -22,9 +22,16 @@
     height: 100%;
     &--active {
         .menu-acco__content {
-            color: $yellow;
+            
+            // width: 100%;
             width: rem(540px);
         }
+
+        .menu-acco__trigger-text {
+            color: $yellow;            
+        }
+
+
         .menu-acco__text {
             display: block;
         }
@@ -36,10 +43,7 @@
     display: block;
     height: 100%;
     float: left;
-    // @include cover;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    @include cover;
     text-decoration: none;
     position: relative;
 }
@@ -47,11 +51,9 @@
 .menu-acco__trigger-text {
     font-size: rem(40px);
     color: #fff;
-    // @include gagalin;
+    @include gagalin;
     font-family: 'Gagalin';
     font-size: rem(40px);
-
-
     text-align: center;
     white-space: nowrap;
     position: absolute;
@@ -60,6 +62,11 @@
     left: 50%;
     top: 100%;
     margin-top: rem(-20px);
+
+        &:hover {
+            color: $yellow;
+        }
+
 }
 
 .menu-acco__content {
@@ -71,7 +78,7 @@
 }
 
 .menu-acco__text {
-    // @include ubuntu(light);
+    @include ubuntu(light);
     color: $white;
     font-size: rem(14px);
     color: #fff;

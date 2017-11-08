@@ -65,18 +65,56 @@
             
             <section class="section best">
                 <div class="container container__best">
-                    <h2 class="section__title section__title--best">мы лучшие</h2>  
+                    <div class="section__title section__title--black">мы лучшие</div>  
                     <ul class="best__list">
                         <li class="best__item">
-                            <div class="best__item-image">
-                                <img src="img/best/meat.svg" alt="meat" class="best__item-svg">                                    
+                            <div class="best__icon">
+                            <svg class="best__icon-pic" style="fill: #e25028">
+                                <use xlink:href="img/sprite.svg#meat"></use>
+                            </svg>
+                                <!-- <img src="img/best/meat.svg" alt="meat" class="best__item-svg">                                     -->
                             </div>
-                            <div class="best__item-title">100% свежее мясо</div>
-                            <div class="best__item-text">Драма представляет собой деструктивный цикл. 
-                                Анапест представляет собой анапест. Ямб неравномерен.
+                            <div class="best__desc">
+                                <div class="best__title">100% свежее мясо</div>
+                                <div class="best__text text-block">
+                                    <p>Драма представляет собой деструктивный цикл. 
+                                    Анапест представляет собой анапест. Ямб неравномерен.</p>
+                                </div>
+                            </div>   
+                        </li>
+                        <li class="best__item">
+                            <div class="best__icon">
+                                <svg class="best__icon-pic" style="fill: #f8b43a">
+                                    <use xlink:href="img/sprite.svg#hand"></use>
+                                </svg>
+                                <!-- <img src="img/best/meat.svg" alt="meat" class="best__item-svg">                                     -->
+                            </div>
+                            <div class="best__desc">
+                                <div class="best__title">Ручная  сборка</div>
+                                <div class="best__text text-block">
+                                    <p>Драма представляет собой деструктивный цикл. 
+                                    Анапест представляет собой анапест. Первое полустишие притягивает 
+                                    сюжетный реформаторский пафос.</p>
+                                </div>
                             </div>
                         </li>
                         <li class="best__item">
+                            <div class="best__icon">
+                                <svg class="best__icon-pic" style="fill: #8ac03e">
+                                    <use xlink:href="img/sprite.svg#natural"></use>
+                                </svg>
+                                <!-- <img src="img/best/meat.svg" alt="meat" class="best__item-svg">                                     -->
+                            </div>
+                            <div class="best__desc">
+                                <div class="best__title">Натуральные ингредиенты</div>
+                                <div class="best__text text-block">
+                                    <p>Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. </p>
+                                </div>
+                            </div>
+                        </li>
+
+
+                        <!-- <li class="best__item">
                             <div class="best__item-image">
                                 <img src="img/best/hand.svg" alt="meat" class="best__item-svg">                                    
                             </div>
@@ -84,8 +122,8 @@
                             <div class="best__item-text">Драма представляет собой деструктивный цикл. 
                                 Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.
                             </div>
-                        </li>
-                        <li class="best__item">
+                        </li> -->
+                        <!-- <li class="best__item">
                             <div class="best__item-image">
                                 <img src="img/best/natural.svg" alt="natural" class="best__item-svg">                                    
                             </div>
@@ -93,7 +131,7 @@
                             <div class="best__item-text">Драма представляет собой деструктивный цикл. Анапест представляет
                                  собой анапест.                            
                             </div>
-                        </li>
+                        </li> -->
                     </ul>                              
                 </div> 
             </section>
@@ -506,7 +544,33 @@
             <a class="fixed-menu__link" href="" data-scroll-to="7"></a>
         </li>
     </ul>
-
-
+    <div class="full-review popup" id="full-review">
+        <a class="full-review__close" href="#">
+            <svg class="full-review__close-btn">
+                <use xlink:href="img/sprite.svg#close"></use>
+            </svg>
+        </a>
+        <div class="full-review__inner">
+            <div class="full-review__title">Констнтин Спилберг</div>
+            <div class="full-review__content">
+                Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими
+                мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять,
+                невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким
+                расплавленным.
+            </div>
+        </div>
+    </div>
+    <div class="status-popup popup" id="success">
+        <div class="status-popup__inner">
+            <div class="status-popup__message">Сообщение отправлено</div>
+            <a class="status-popup__close btn" href="#">Закрыть</a>
+        </div>
+    </div>
+    <div class="status-popup popup" id="error">
+        <div class="status-popup__inner">
+            <div class="status-popup__message error-message">Произошла ошибка</div>
+            <a class="status-popup__close btn" href="#">Закрыть</a>
+        </div>
+    </div>
 </body>
 </html>

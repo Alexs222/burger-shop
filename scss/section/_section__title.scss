@@ -1,8 +1,26 @@
 .section__title {
     color: $yellow;
-    font-family: 'Gagalin';
+    @include gagalin;
     font-size: rem(72px); // font-weight: 400;
     line-height: 1.42;
     margin: 0;
     padding-top: rem(60px);
+    margin-bottom: rem(12px);
+    
+    &.section__title--black {
+        color: $dark;
+    }
+    &.section__title--white {
+        color: white;
+    }
 }
+// color: $yellow;
+// font-size: rem(72px);
+// @include gagalin;
+// &.section__title_black {
+//     color: $black;
+// }
+
+// &.section__title_white {
+//     color: white;
+// }

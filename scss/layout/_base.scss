@@ -58,7 +58,8 @@ body {
     // margin: 0;
     // padding: 0;
     font-size: rem(16px);
-    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    @include ubuntu();
+    // font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
     line-height: 1.42;
     color: $dark;
     -webkit-font-smoothing: antialiased;

@@ -13,6 +13,7 @@
     align-items: center;
     text-align: center;
     padding: 0 20%;
+    margin-top: rem(70px);
   }
 }
 
@@ -26,7 +27,7 @@
 
 .hero__left,
 .hero__right {
-  // float: left;
+  float: left;
   width: 50%;
   @include tablets() {
     float: none;
@@ -41,15 +42,14 @@
 .hero__right {
   padding-top: rem(115px);
   @include tablets() {
-    // padding-top: 0;
+    padding-top: 0;
   }
 }
 
 .hero__desc {
   font-size: rem(65px);
   color: white;
-  font-family: 'Lifehack';
-  // @include lifehack;
+  @include lifehack;
   text-transform: lowercase;
   line-height: 1em;
 }

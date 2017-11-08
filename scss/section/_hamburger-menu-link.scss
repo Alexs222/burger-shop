@@ -5,9 +5,9 @@
     align-items: center;
     margin-left: rem(30px);
      display: none;
-    // @include tablets() {
-    //     display: flex;
-    // }
+    @include tablets() {
+        display: flex;
+    }
 }
 
 .hamburger-menu-link__bars {
@@ -26,9 +26,9 @@
         position: absolute;
     }
     &:before {
-        top: 10px;
+        top: 17px;
     }
     &:after {
-        bottom: 10px;
+        bottom: 17px;
     }
 }
