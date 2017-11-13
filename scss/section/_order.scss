@@ -144,14 +144,12 @@
     .order__radio-elem:checked {
         &+.order__radio-fake {
             &:after {
-                background: url("../img/icons/check.svg") 50% no-repeat transparent;
+                background: url("../img/icons/check/check-red-2.svg") 50% no-repeat transparent;
                 background-size: contain;
                 // width: rem(11px);
                 // height: rem(9px);
-                width: rem(15px);
-                height: rem(12px);
-                
-
+                width: rem(17px);
+                height: rem(14px);
             }
         }
     }
@@ -172,9 +170,6 @@
     &:hover {
         background-color: darken($red, 20%);
     }
-
-
-
 }
 
 .order__form-button_reset {
@@ -187,6 +182,14 @@
         background-color: darken(grey, 20%);
     }
 }
+
+
+
+
+
+
+
+
 
 // .order {
 //     background: url(../img/order/order-bg.jpg) center center no-repeat;

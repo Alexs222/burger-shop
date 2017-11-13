@@ -74,24 +74,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  &:hover {
-    .down-arrow__icon {
-      margin-top: rem(-15px);
-      width: rem(45px);
-      height: rem(45px);
-    }
+
+  &:hover .scroll__image {
+    fill: $red;
   }
 }
 
-.down-arrow__icon {
-  width: rem(40px);
-  height: rem(40px);
-  transition: .3s;
-  // fill: #fff;
-}
-
-.down-arrow:hover {
-    transform: scale(2 ,2);    
+.scroll__image {
+  width: rem(30px);
+  height: rem(30px);
+  fill: #fff;
 }
 
 

@@ -58,13 +58,16 @@
                 </div>
 
                 <a href="#" class="down-arrow" data-scroll-to="1">
-                    <img src="img/img_welcome/arrow-scroll.svg" alt="scroll" class="scroll__image">                        
+                    <svg class="scroll__image">
+                        <use xlink:href="img/sprite.svg#arrow-scroll"></use>
+                    </svg>
+                    <!-- <img src="img/img_welcome/arrow-scroll.svg" alt="scroll" class="scroll__image">                         -->
                 </a>
                 
             </section>
             
             <section class="section best">
-                <div class="container container__best">
+                <div class="container container-best">
                     <h1 class="section__title section__title--black">мы лучшие</h1>  
                     <ul class="best__list">
                         <li class="best__item">
@@ -112,29 +115,132 @@
                                 </div>
                             </div>
                         </li>
-
-
-                        <!-- <li class="best__item">
-                            <div class="best__item-image">
-                                <img src="img/best/hand.svg" alt="meat" class="best__item-svg">                                    
-                            </div>
-                            <div class="best__item-title">Ручная  сборка</div>
-                            <div class="best__item-text">Драма представляет собой деструктивный цикл. 
-                                Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.
-                            </div>
-                        </li> -->
-                        <!-- <li class="best__item">
-                            <div class="best__item-image">
-                                <img src="img/best/natural.svg" alt="natural" class="best__item-svg">                                    
-                            </div>
-                            <div class="best__item-title">Натуральные ингредиенты</div>
-                            <div class="best__item-text">Драма представляет собой деструктивный цикл. Анапест представляет
-                                 собой анапест.                            
-                            </div>
-                        </li> -->
                     </ul>                              
                 </div> 
             </section>
+
+            <section class="section burgers">
+                <div class="container-burgers">
+                        <div class="burgers__arrow-left">
+                            <a href="#" class="burgers__arrow-link" data-scroll-to="1">
+                                <svg class="burgers__arrow-svg-left" style="fill: #fff">
+                                    <use xlink:href="img/sprite.svg#arrow-scroll"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    <div class="burgers__container">
+                        <div class="burgers__content">
+                            <div class="burgers__left">
+                                <img src="img/burgers/burger_black.png" alt="burger" class="burgers__img">
+                                <div class="burgers__composition">
+                                    <div class="burgers__composition-wrap">
+                                        <svg class="burgers__icon-pic" style="fill: #fff">
+                                            <use xlink:href="img/sprite.svg#burger"></use>
+                                        </svg>
+                                        <div class="composition__text">состав</div>
+                                    </div> 
+                                    <div class="burgers__composition-menu">
+                                        <ul class="composition__list">
+                                            <li class="composition__item beef">
+                                                <div class="composition__img">
+                                                    <svg class="composition__pic" style="fill: #e2532b">
+                                                        <use xlink:href="img/sprite.svg#beef"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="composition__item-title">Говядина</div>    
+                                                <div class="composition__item-num">300 г.</div>    
+                                            </li>
+                                            <li class="composition__item bun">
+                                                <div class="composition__img">
+                                                    <svg class="composition__pic" style="fill: #f8b43a">
+                                                        <use xlink:href="img/sprite.svg#buns"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="composition__item-title">Булочки</div>    
+                                                <div class="composition__item-num">100 г.</div>                                                   
+                                            </li>
+                                            <li class="composition__item greenery">
+                                                <div class="composition__img">
+                                                    <svg class="composition__pic" style="fill: #8ac03e">
+                                                        <use xlink:href="img/sprite.svg#salad"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="composition__item-title">Зелень</div>    
+                                                <div class="composition__item-num">70 г.</div> 
+                                            </li>
+                                            <li class="composition__item sause">
+                                                <div class="composition__img">
+                                                    <svg class="composition__pic" style="fill: #e2532b">
+                                                        <use xlink:href="img/sprite.svg#sauce"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="composition__item-title">Соус</div>    
+                                                <div class="composition__item-num">150 г.</div> 
+                                            </li>
+                                            <li class="composition__item vegetables">
+                                                <div class="composition__img">
+                                                    <svg class="composition__pic" style="fill: #8ac03e">
+                                                        <use xlink:href="img/sprite.svg#cucumber"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="composition__item-title">Овощи</div>    
+                                                <div class="composition__item-num">200 г.</div> 
+                                            </li>
+                                            <li class="composition__item cheese">
+                                                <div class="composition__img">
+                                                    <svg class="composition__pic" style="fill: #f8b43a">
+                                                        <use xlink:href="img/sprite.svg#cheese"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="composition__item-title">Сыр</div>    
+                                                <div class="composition__item-num">80 г.</div> 
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="burgers__kkal">
+                                    <div class="burgers__kkal-wrap">
+                                        <!-- <svg class="burgers__kkal-pic" style="fill: #fff">
+                                            <use xlink:href="img/sprite.svg#kkal"></use>
+                                        </svg> -->
+                                        
+                                    </div>
+                                    <div class="kkal__num">1200</div>
+                                    <div class="kkal__text">ккал</div>
+                                </div>
+
+                            </div>
+                            <div class="burgers__right">
+                                <h1 class="section__title section__title--burger">Dark BEEF Burger</h1>
+                                <div class="burgers__desc">
+                                    <p>Ваш старый добрый знакомый, с рубленым бифштексом 
+                                    из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, 
+                                    луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p> 
+                                </div>
+                                <div class="burger__promo">
+                                    <div class="promo__left">
+                                        <div class="promo__num">500</div>
+                                        <div class="promo__desk">рублей</div> 
+                                    </div>
+                                    <div class="promo__right">
+                                        <a href="#" class="order-link btn" data-goto="6">заказать</a> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="burgers__arrow-right">
+                            <a href="#" class="burgers__arrow-link" data-scroll-to="1">
+                                <svg class="burgers__arrow-svg-right" style="fill: #fff">
+                                    <use xlink:href="img/sprite.svg#arrow-scroll"></use>
+                                </svg>
+                            </a>
+                        </div>
+                </div>
+            </section>
+
+
 
             <section class="section team">
                 <div class="team__section">
@@ -157,7 +263,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="team-acco__item team-acco__item--active active">
+                            <li class="team-acco__item team-acco__item--active">
                                 <a href="#" class="team-acco__trigger">Ричард Джеймс</a>
                                 <div class="team-acco__content">
                                     <div class="team-acco__pic">
@@ -217,7 +323,7 @@
                         </a>
                         <div class="menu-acco__content">
                             <div class="menu-acco__text">
-                                Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений.
+                                    Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений.
                                 Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к
                                 слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин,
                                 пространственно выбирает метр. Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование
@@ -263,7 +369,7 @@
             <section class="section about">
                 <h1 class="section__title visuallyhidden">отзывы</h1>
                 <ul class="about__list">
-                    <li class="about__item" style="background-image:url(img/about/photo_1.jpg)">                            
+                    <li class="about__item" style="background-image:url(img/about/color_1.jpg)">                            
                         <img src="img/about/photo_1.jpg" alt="один" class="visuallyhidden">                                                    
                         <div class="about__pointing">
                             <h4 class="about__title">Константин Спилберг</h4>
@@ -277,7 +383,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="about__item" style="background-image:url(img/about/photo_2.jpg)">
+                    <li class="about__item" style="background-image:url(img/about/color_2.jpg)">
                         <img src="img/about/photo_2.jpg" alt="один" class="visuallyhidden">
                         <div class="about__pointing">
                             <h4 class="about__title">Константин Спилберг</h4>
@@ -291,7 +397,7 @@
                             </div>
                         </div>    
                     </li>
-                    <li class="about__item" style="background-image:url(img/about/photo_3.jpg)">
+                    <li class="about__item" style="background-image:url(img/about/color_3.jpg)">
                         <img src="img/about/photo_3.jpg" alt="один" class="visuallyhidden">
                         <div class="about__pointing">
                             <h4 class="about__title">Константин Спилберг</h4>
@@ -305,7 +411,7 @@
                             </div>
                         </div>     
                     </li>
-                    <li class="about__item" style="background-image:url(img/about/photo_4.jpg)">
+                    <li class="about__item" style="background-image:url(img/about/color_4.jpg)">
                         <img src="img/about/photo_4.jpg" alt="один" class="visuallyhidden">
                         <div class="about__pointing">
                             <h4 class="about__title">Константин Спилберг</h4>
@@ -319,7 +425,7 @@
                             </div>
                         </div>     
                     </li>
-                    <li class="about__item" style="background-image:url(img/about/photo_5.jpg)">
+                    <li class="about__item" style="background-image:url(img/about/color_5.jpg)">
                         <img src="img/about/photo_5.jpg" alt="один" class="visuallyhidden">
                         <div class="about__pointing">
                             <h4 class="about__title">Константин Спилберг</h4>
@@ -333,7 +439,7 @@
                             </div>
                         </div>     
                     </li>
-                    <li class="about__item" style="background-image:url(img/about/photo_6.jpg)">
+                    <li class="about__item" style="background-image:url(img/about/color_6.jpg)">
                             <img src="img/about/photo_6.jpg" alt="один" class="visuallyhidden">
                         <div class="about__pointing">
                             <h4 class="about__title">Константин Спилберг</h4>
@@ -347,7 +453,7 @@
                             </div>
                         </div>    
                     </li>
-                    <li class="about__item" style="background-image:url(img/about/photo_7.jpg)">
+                    <li class="about__item" style="background-image:url(img/about/color_7.jpg)">
                         <img src="img/about/photo_7.jpg" alt="один" class="visuallyhidden">
                         <div class="about__pointing">
                             <h4 class="about__title">Константин Спилберг</h4>
@@ -361,7 +467,7 @@
                             </div>
                         </div>    
                     </li>
-                    <li class="about__item" style="background-image:url(img/about/photo_8.jpg)">
+                    <li class="about__item" style="background-image:url(img/about/color_8.jpg)">
                         <img src="img/about/photo_8.jpg" alt="один" class="visuallyhidden">
                         <div class="about__pointing">
                             <h4 class="about__title">Константин Спилберг</h4>
@@ -379,7 +485,7 @@
             </section>
 
             <section class="section order">
-                <div class="container container__order">
+                <div class="container container-order">
                     <h1 class="section__title">Закажите доставку</h1>
 
                     <form class="order__form-tag" id="order-form">
@@ -447,7 +553,8 @@
                                     <div class="order__form-row">
                                         <label class="order__radio order__radio_checkbox">
                                             <input class="order__radio-elem" name="callback" type="checkbox">
-                                            <div class="order__radio-fake"></div>
+                                            <div class="order__radio-fake">
+                                            </div>
                                             <div class="order__radio-title">Не перезванивать</div>
                                         </label>
                                     </div>
@@ -572,5 +679,9 @@
             <a class="status-popup__close btn" href="#">Закрыть</a>
         </div>
     </div>
+    
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+    </script>
+    <script src="/js/main.js"></script>
 </body>
 </html>

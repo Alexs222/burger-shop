@@ -22,21 +22,35 @@
     height: 100%;
     &--active {
         .menu-acco__content {
-            
-            // width: 100%;
             width: rem(540px);
         }
-
         .menu-acco__trigger-text {
-            color: $yellow;            
+            color: $yellow;
         }
-
-
-        .menu-acco__text {
-            display: block;
-        }
+        // .menu-acco__text {
+        //     display: block;
+        // }
     }
 }
+
+
+// Тест по ховеру
+
+// .menu-acco__item {
+//     height: 100%;
+//     &:hover {
+//         .menu-acco__content {
+//             width: rem(540px); // width: rem(540px);
+//         }
+//         .menu-acco__trigger-text {
+//             color: $yellow;
+//         }
+//         // .menu-acco__text {
+//         //     display: block;
+//         // }
+//     }
+// }
+
 
 .menu-acco__trigger {
     width: rem(80px);
@@ -75,6 +89,7 @@
     background: rgba(#2f3234, .93);
     width: 0;
     overflow: hidden;
+    transition: 2s;
 }
 
 .menu-acco__text {
@@ -82,11 +97,13 @@
     color: $white;
     font-size: rem(14px);
     color: #fff;
-    padding: rem(60px) rem(30px);
-    width: 100%;
+    margin-top: rem(60px);
+    margin-left: rem(30px);
+    width: rem(480px);
     line-height: 1.8;
-    display: none;
+    // display: none;
 }
+
 
 // .menu {
 //     background: url(../img/menu/menu_bg.jpg) center center no-repeat;

@@ -16,9 +16,11 @@
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
+    filter: grayscale(100%);
     &:hover .about__pointing {
         height: 100%;
-        transition: 0.5s; // filter: grayscale(100%);
+        transition: 0.5s; 
     }
 
     @include tablets {

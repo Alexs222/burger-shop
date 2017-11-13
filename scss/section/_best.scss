@@ -12,14 +12,19 @@
 
 .best__icon {
     margin-bottom: rem(20px);
+    @include phones {
+        margin-right: rem(30px);
+    }
 }
 
 .best__icon-pic {
-    width: 90%;
+    width: rem(100px);
     height: rem(100px);
-    svg {
-        max-width: 95%;
-    }
+    // width: 90%;
+    // height: rem(100px);
+    // svg {
+    //     max-width: 95%;
+    // }
 }
 
 .best__list {
@@ -30,12 +35,14 @@
 }
 
 .best__item {
+    width: 33.3%;
     margin-bottom: rem(50px);
     padding: 0 rem(15px);
     display: flex;
     flex-direction: column;
     @include phones {
         flex-direction: row;
+        width: 100%;
     }
 }
 
@@ -55,6 +62,11 @@
     @include lifehack;
     color: $dark;
     margin-bottom: rem(20px);
+}
+
+.best__text {
+    @include ubuntu (light);
+    font-size: rem(14px);
 }
 
 // .best {
