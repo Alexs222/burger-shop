@@ -16,13 +16,6 @@
     transform: rotate(-90deg);
 }
 
-// .burgers__arrow-right {
-//     position: absolute;
-//     top: 50%;
-//     left: 100%;
-//     transform: rotate(-90deg);
-// }
-
     .burgers__arrow-svg-left,
 .burgers__arrow-svg-right {
     width: rem(27px);
@@ -46,10 +39,7 @@
    
     @include tablets {
         flex-direction: column;
-        // align-items: center;
         text-align: center;
-        // padding: 0 20%;
-        // margin-top: rem(70px);
     }
 }
 
@@ -111,9 +101,6 @@
         }
     }
 
-
-
-
 .burgers__icon-pic {
     width: rem(46px);
     height: rem(44px);
@@ -150,8 +137,6 @@
     width: rem(45px);
     height: rem(45px);
 }
-
-
 
 .composition__item-title,
 .composition__item-num {
@@ -197,14 +182,6 @@
         }
 }
 
-// .burgers__kkal-wrap {
-//     width: rem(60px);
-//     height: rem(90px);
-//     background: url(../img/icons/kkal.svg) no-repeat;
-//     fill: #fff;
-
-// }
-
 .burgers__kkal-wrap {
     position: relative;
 }
@@ -216,8 +193,6 @@
     color: $white;
     @include gagalin;
     font-size: rem(20px);
-    // text-align: center;
-    // line-height: rem(70px);
 }
 
 .kkal__text {
@@ -227,19 +202,7 @@
     color: $white;
     @include gagalin;
     font-size: rem(20px);
-    // text-align: center;
-    // line-height: rem(5px);
-
 }
-
-
-
-// .hero__right {
-//     padding-top: rem(115px);
-//     @include tablets() {
-//         padding-top: 0;
-//     }
-// }
 
 .burgers__desc {
     font-size: rem(14px);
@@ -258,11 +221,6 @@
     margin-top: rem(72px);
 }
 
-
-
-
-
-
 .section__title--burger {
     color: $white;
     margin: 0 0 rem(40px) 0;
@@ -277,7 +235,6 @@
 .promo__left {
     margin-right: rem(30px); 
 }
-
 
 .promo__num {
     color: $red;
