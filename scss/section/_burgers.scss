@@ -6,6 +6,30 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
+}
+
+
+
+.slider__list {
+    position: relative;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // flex-direction: row;
+    // height: 100%;
+}
+
+.burgers__arrow-left {
+    position: absolute;
+    top: 50%;
+    left: rem(-15px);
+}
+
+.burgers__arrow-right {
+    position: absolute;
+    top: 50%;
+    right: rem(-10px);
 }
 
 .burgers__arrow-svg-left {
@@ -22,19 +46,20 @@
     height: rem(27px);
 }
 
-.container-burgers {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
+// .container-burgers {
+//     width: 100%;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-around;
+//     align-items: center;
+// }
 
-.burgers__content {
+.burgers__item {
     display: flex;
     align-items: center;
     justify-content: center;
     max-width: rem(940px);
+    padding-bottom: rem(75px);
 
    
     @include tablets {
@@ -42,14 +67,6 @@
         text-align: center;
     }
 }
-
-// .hero__container {
-//     display: flex;
-//     flex: 1;
-//     flex-direction: column;
-//     justify-content: center;
-//     padding-bottom: 15%;
-// }
 
 .burgers__left,
 .burgers__right {
@@ -71,10 +88,19 @@
     position: relative;
 }
 
+// .burgers__img {
+//     display: inline-block;
+//     position: relative;
+//     left: 50%;
+//     transform: translateX(-50%);
+//     max-width: 100%;
+//     max-height: 100%;
+// }
+
 .burgers__composition {
     position: absolute;
     top: 0;
-    left: 0;
+    left: rem(15px);
     display: flex;  
 
     &:hover .burgers__composition-menu {
@@ -170,11 +196,12 @@
 .burgers__kkal {
     position: absolute;
     top: rem(355px);
-    left: 0;
+    left: rem(15px);
     width: rem(60px);
     height: rem(90px);
     background: url(../img/icons/kkal.svg) no-repeat;
     fill: $white;
+    opacity: 0.5;
 
         @include tablets {
             top: 0;
@@ -250,3 +277,26 @@
     display: inline-block;
 }
 
+.slider__dots {
+    display: flex;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    display: none;
+}
+
+.slider__dot-item {
+    margin-right: rem(10px);
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.slider__dot-circle {
+    content: '';
+    background: $white;
+    width: rem(10px);
+    height: rem(10px);
+    border-radius: 50%;
+}

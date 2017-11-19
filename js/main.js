@@ -12,6 +12,7 @@ function init() {
     });
 
     myMap.behaviors.disable('scrollZoom');
+    // myMap.behaviors.disable('ruler');
 
     var coords = [
         [59.94554327989287, 30.38935262114668],
@@ -34,3 +35,102 @@ function init() {
     myMap.geoObjects.add(myCollection);
 }
 
+
+// Аккордеон секция team
+
+$(function () {
+    $('.team-acco__trigger').on('click', e => {
+        e.preventDefault();
+
+        const $this = $(e.currentTarget);
+        const container = $this.closest('.team-acco');
+        const item = $this.closest('.team-acco__item');
+        const items = $('.team-acco__item', container);
+        const content = $('.team-acco__content', item);
+        const otherContent = $('.team-acco__content', container);
+        const textBlock = $('.team-acco__wrap-content', item);
+        const regHeight = textBlock.outerHeight();
+
+        if (!item.hasClass('team-acco__item--active')) {
+
+            items.removeClass('team-acco__item--active');
+            item.addClass('team-acco__item--active');
+            
+            otherContent.css({
+            'height' : 0
+        })
+
+            content.css({
+            'height' : regHeight
+        })
+
+        } else {
+            item.removeClass('team-acco__item--active');
+            content.css({
+                'height' : 0
+            })
+        }
+
+    })
+
+})
+
+// Аккордеон секция menu
+
+$(function () {
+    $('.menu-acco__trigger').on('click', e => {
+        e.preventDefault();
+
+        const $this = $(e.currentTarget);
+        const container = $this.closest('.menu-acco');
+        const item = $this.closest('.menu-acco__item');
+        const items = $('.menu-acco__item', container);
+        const content = $('.menu-acco__content', item);
+        const otherContent = $('.menu-acco__content', container);
+        // const textBlock = $('.menu-acco__text', item);
+        // const regWidth = textBlock.outerWidth();
+
+        if (!item.hasClass('menu-acco__item--active')) {
+
+            items.removeClass('menu-acco__item--active');
+            item.addClass('menu-acco__item--active');
+
+            otherContent.css({
+                'width': 0
+            })
+
+            content.css({
+                'width': 540
+            })
+
+        } else {
+            item.removeClass('menu-acco__item--active');
+            content.css({
+                'width': 0
+            })
+        }
+
+    })
+
+})
+
+// Слайдер bxSlider
+
+$(document).ready(function () {
+    let slider = $('.slider__list').bxSlider({
+        pager : false,
+        controls : false
+    });
+
+    $('.burgers__arrow-left').on('click', e => {
+        e.preventDefault();
+        slider.goToPrevSlide();
+    })
+
+    $('.burgers__arrow-right').on('click', e => {
+        e.preventDefault();
+        slider.goToNextSlide();
+    })
+
+
+});

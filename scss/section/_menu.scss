@@ -21,6 +21,7 @@
 .menu-acco__item {
     height: 100%;
     &--active {
+
         .menu-acco__content {
             width: rem(540px);
         }
@@ -99,6 +100,7 @@
     color: #fff;
     margin-top: rem(60px);
     margin-left: rem(30px);
+    // width: 100%;
     width: rem(480px);
     line-height: 1.8;
     // display: none;

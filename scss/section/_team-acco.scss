@@ -1,8 +1,11 @@
 .team-acco {
 }
 
+
+
 .team-acco__item {
     margin-bottom: rem(15px);
+    margin-left: rem(20px);
     &:last-child {
         margin-bottom: 0;
     }
@@ -14,7 +17,8 @@
             }
         }
         .team-acco__content {
-            height: 100%;
+            // display: block;
+            // height: 100%;
         }
     }
 }
@@ -41,6 +45,10 @@
         top: rem(8px);
         width: 0;
         height: 0;
+        @include tablets() {
+            margin-top: rem(10px);    
+        }
+        
     }
     &:before {
         border-top: rem(7px) solid $yellow;
@@ -65,17 +73,29 @@
 }
 
 .team-acco__content {
-    display: flex;
-    max-width: rem(330px);
+    // display: flex;
+    // max-width: rem(330px);
+    // display: none;
     height: 0;
     overflow: hidden;
+    transition: 0.5s;
 
-        @include tablets() {
-            flex-direction: column;
-            align-items: center;
-        }
+        // @include tablets() {
+        //     flex-direction: column;
+        //     align-items: center;
+        // }
 
 }
+
+.team-acco__wrap-content {
+    display: flex;
+    max-width: rem(330px); 
+    @include tablets() {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 
 .team-acco__pic {
     text-align: center;
