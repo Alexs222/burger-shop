@@ -302,6 +302,11 @@ $(function () {
         if (!fullMenu.hasClass('active')) {
             // fullMenu.removeClass('.active');
             fullMenu.addClass('active');
+            fullMenu.css({
+                'height': 100 + '%',
+                'transition': 1 + 's'
+            });
+
         } else {
             fullMenu.removeClass('active');
         }
