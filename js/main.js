@@ -262,7 +262,7 @@ $(document).on('keydown', e => {
 
 
   //  Переходы по дата атрибуту
-  
+
 if (isMobile) {
     $(window).swipe({
         swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
@@ -279,5 +279,91 @@ $('[data-scroll-to]').on('click touchstart', e => {
 
     performTransition(sectionIndex);
 
+
+})
+
+
+// fullscreenMenu
+
+$(function () { 
+    const fullMenu = $('.fullscreenmenu');
+    const closeMenu = $('.fullscreen__btn');
+
+
+
+    // ---- открываем fullscreenMenu
+
+    $('.hamburger-menu-link').on('click', e => {
+        e.preventDefault();
+        // console.log(e.currentTarget);
+
+        // console.log(fullMenu);
+
+        if (!fullMenu.hasClass('.active')) {
+            // fullMenu.removeClass('.active');
+            fullMenu.addClass('active');
+        } else {
+            fullMenu.removeClass('.active');
+        }
+    });
+
+    // ---- работаем c closeMenu
+
+    $('.fullscreen__btn').on('click', e => {
+        e.preventDefault();
+        // console.log(e.currentTarget);
+        // console.log(closeMenu);
+        
+        fullMenu.css({
+            'height': 0 
+        });
+        // fullMenu.removeClass('.active');
+    });
+
+    // ---- работаем с пунктами меню
+
+    $('.fullscreen__link').on('click', e => {
+        e.preventDefault();
+        // console.log(e.currentTarget);
+        // console.log(closeMenu);
+
+        fullMenu.css({
+            'height': 0
+        });
+        // fullMenu.removeClass('.active');
+    });
+
+
+
+        // const $this = $(e.currentTarget);
+        // const container = $this.closest('.menu-acco');
+        // const item = $this.closest('.menu-acco__item');
+        // const items = $('.menu-acco__item', container);
+        // const content = $('.menu-acco__content', item);
+        // const otherContent = $('.menu-acco__content', container);
+        // // const textBlock = $('.menu-acco__text', item);
+        // // const regWidth = textBlock.outerWidth();
+
+        // if (!item.hasClass('menu-acco__item--active')) {
+
+        //     items.removeClass('menu-acco__item--active');
+        //     item.addClass('menu-acco__item--active');
+
+        //     // otherContent.css({
+        //     //     'width': 0
+        //     // })
+
+        //     // content.css({
+        //     //     'width': 540
+        //     // })
+
+        // } else {
+        //     item.removeClass('menu-acco__item--active');
+        //     content.css({
+        //         'width': 0
+        //     })
+        // }
+
+    
 
 })

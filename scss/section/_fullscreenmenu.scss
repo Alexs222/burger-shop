@@ -1,12 +1,20 @@
 .fullscreenmenu {
-    display: none;
-    left: 1999px;
+    height: 0;
+    overflow: hidden;
+    // display: none;
+    // right: 2999px;
     position: absolute;
-    // left: 0;
+    left: 0;
     right: 0;
     top: 0;
     bottom: 0;
     background-color: rgba(47, 50, 52, 0.99);
+
+    &.active {
+        // display: block;
+        height: 100%;
+        transition: 1s;
+    }
 }
 
 .fullscreen-header {
