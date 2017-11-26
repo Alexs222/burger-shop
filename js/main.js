@@ -168,8 +168,8 @@ const sections = $('.section');
 
 let inScroll = false;
 
-// const mobileDetect = new MobileDetect(window.navigator.userAgent);
-// const isMobile = mobileDetect.mobile();
+const mobileDetect = new MobileDetect(window.navigator.userAgent);
+const isMobile = mobileDetect.mobile();
 
 
     // Функция отвечает за подсветку активного класса в меню
@@ -261,14 +261,15 @@ $(document).on('keydown', e => {
 });
 
 
-    // Переходы по дата атрибуту
-// if (isMobile) {
-//     $(window).swipe({
-//         swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
-//             scrollToSection(direction);
-//         }
-//     })
-// }
+  //  Переходы по дата атрибуту
+  
+if (isMobile) {
+    $(window).swipe({
+        swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
+            scrollToSection(direction);
+        }
+    })
+}
 
 
 $('[data-scroll-to]').on('click touchstart', e => {
