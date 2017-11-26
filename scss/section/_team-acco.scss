@@ -16,10 +16,11 @@
                 transform: rotate(-180deg);
             }
         }
-        .team-acco__content {
-            // display: block;
-            // height: 100%;
-        }
+        // .team-acco__content {
+        //     display: block;
+        //     height: 100%;
+            
+        // }
     }
 }
 
@@ -90,6 +91,7 @@
 .team-acco__wrap-content {
     display: flex;
     max-width: rem(330px); 
+
     @include tablets() {
         flex-direction: column;
         align-items: center;

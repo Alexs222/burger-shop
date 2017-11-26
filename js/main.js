@@ -11,8 +11,7 @@ function init() {
         controls: []
     });
 
-    myMap.behaviors.disable('scrollZoom');
-    // myMap.behaviors.disable('ruler');
+    myMap.behaviors.disable(['drag', 'scrollZoom', 'dblClickZoom']);
 
     var coords = [
         [59.94554327989287, 30.38935262114668],
@@ -95,13 +94,13 @@ $(function () {
             items.removeClass('menu-acco__item--active');
             item.addClass('menu-acco__item--active');
 
-            otherContent.css({
-                'width': 0
-            })
+            // otherContent.css({
+            //     'width': 0
+            // })
 
-            content.css({
-                'width': 540
-            })
+            // content.css({
+            //     'width': 540
+            // })
 
         } else {
             item.removeClass('menu-acco__item--active');
@@ -131,6 +130,152 @@ $(document).ready(function () {
         e.preventDefault();
         slider.goToNextSlide();
     })
-
-
 });
+
+
+
+//  Модальое окно fancybox
+
+// $(document).ready(function () {
+
+//     $('.order-link--about').fancybox({
+        
+//             'width': 200,
+//             'height': 100,
+//             autoDimensions: false
+//         'showCloseButton' : false
+//         'autoDimensions' : false,
+//         'maxWidth' : 460,
+//         'maxHeight' : 255,
+//         'transitionIn': 'elastic',
+//         'transitionOut': 'elastic',
+//         'speedIn': 600,
+//         'speedOut': 200,
+//         'overlayShow': false
+//         'autoSize': false
+//     });
+// });
+
+
+
+// One Page Scroll
+
+        
+
+const display = $('.maincontent');
+const sections = $('.section');
+
+let inScroll = false;
+
+// const mobileDetect = new MobileDetect(window.navigator.userAgent);
+// const isMobile = mobileDetect.mobile();
+
+
+    // Функция отвечает за подсветку активного класса в меню
+    
+const switchMenuActiveClass = sectionEq => {
+    $('.fixed-menu__item').eq(sectionEq).addClass('active')
+        .siblings().removeClass('active');
+}
+
+
+    // Функция которая перемещает секции
+
+const performTransition = sectionEq => {
+    if (inScroll) return
+    inScroll = true
+
+    const position = (sectionEq * -100) + '%';
+
+    display.css({
+        'transform': `translate(0, ${position})`,
+        '-webkit-transform': `translate(0, ${position})`
+    })
+
+    sections.eq(sectionEq).addClass('active')
+        .siblings().removeClass('active');
+
+    setTimeout(() => {
+        inScroll = false;
+        switchMenuActiveClass(sectionEq);
+    }, 1300);
+}
+
+const difineSections = section => {
+    const activeSection = sections.filter('.active');
+    return {
+        activeSection: activeSection,
+        nextSection: activeSection.next(),
+        prevSection: activeSection.prev()
+    }
+}
+
+const scrollToSection = direction => {
+    const section = difineSections(sections)
+
+    if (inScroll) return;
+
+    if (direction == 'up' && section.nextSection.length) { //вниз
+        performTransition(section.nextSection.index());
+    }
+        
+    if (direction == 'down' && section.prevSection.length) { //вверх
+        performTransition(section.prevSection.index());
+    }
+}
+
+$('.wrapper').on({
+    wheel: e => {
+        const deltaY = e.originalEvent.deltaY;
+        let direction = (deltaY > 0)
+            ? 'up' 
+            : 'down'
+        
+        scrollToSection(direction);
+       
+
+    },
+
+    touchmove : e => (e.preventDefault())
+});
+
+
+    // Управление кнопками клавиатуры
+
+$(document).on('keydown', e => {
+    const section = difineSections(sections);
+
+    if (inScroll) return
+     switch (e.keyCode) {
+         case 40: //вверх
+            if (!section.nextSection.length) return
+            performTransition(section.nextSection.index());
+            break;
+
+         case 38: //вниз
+             if (!section.prevSection.length) return
+             performTransition(section.prevSection.index());
+             break;
+     }
+});
+
+
+    // Переходы по дата атрибуту
+// if (isMobile) {
+//     $(window).swipe({
+//         swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
+//             scrollToSection(direction);
+//         }
+//     })
+// }
+
+
+$('[data-scroll-to]').on('click touchstart', e => {
+    e.preventDefault();
+    const $this = $(e.currentTarget);
+    const sectionIndex = parseInt($this.attr('data-scroll-to'));
+
+    performTransition(sectionIndex);
+
+
+})

@@ -13,11 +13,11 @@
 
 .slider__list {
     position: relative;
-    // display: flex;
-    // align-items: center;
+    display: flex;
+    align-items: center;
     // justify-content: center;
-    // flex-direction: row;
-    // height: 100%;
+    flex-direction: row;
+    // height: 100vh;
 }
 
 .burgers__arrow-left {
@@ -88,14 +88,14 @@
     position: relative;
 }
 
-// .burgers__img {
-//     display: inline-block;
-//     position: relative;
-//     left: 50%;
-//     transform: translateX(-50%);
-//     max-width: 100%;
-//     max-height: 100%;
-// }
+.burgers__img {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+    max-height: 100%;
+}
 
 .burgers__composition {
     position: absolute;

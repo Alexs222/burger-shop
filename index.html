@@ -6,14 +6,15 @@
     <title>Home page</title>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico">   
 </head>
 <body>
     <div class="wrapper">
         <div class="maincontent">
-            <section class="section hero">
-               <div class="container">
+            <section class="section hero active">
+               <div class="container">                   
                     <header class="header">
                             <div class="header__logo">
                                 <img src="img/img_welcome/logo.svg" alt="logo" class="logo__img">                                               
@@ -22,18 +23,18 @@
                                 <div class="header__menu">
                                     <nav class="nav">
                                         <ul class="nav__list">
-                                            <li class="nav__item"><a href="#" class="nav__link" data-scroll-to="1">о нас</a></li>
-                                            <li class="nav__item"><a href="#" class="nav__link" data-scroll-to="2">бургеры</a></li>
-                                            <li class="nav__item"><a href="#" class="nav__link" data-scroll-to="3">команда</a></li>
-                                            <li class="nav__item"><a href="#" class="nav__link" data-scroll-to="4">меню</a></li>
-                                            <li class="nav__item"><a href="#" class="nav__link" data-scroll-to="5">отзывы</a></li>
-                                            <li class="nav__item"><a href="#" class="nav__link" data-scroll-to="6">контакты</a></li>
+                                            <li class="nav__item"><a href="" class="nav__link" data-scroll-to="1">о нас</a></li>
+                                            <li class="nav__item"><a href="" class="nav__link" data-scroll-to="2">бургеры</a></li>
+                                            <li class="nav__item"><a href="" class="nav__link" data-scroll-to="3">команда</a></li>
+                                            <li class="nav__item"><a href="" class="nav__link" data-scroll-to="4">меню</a></li>
+                                            <li class="nav__item"><a href="" class="nav__link" data-scroll-to="5">отзывы</a></li>
+                                            <li class="nav__item"><a href="" class="nav__link" data-scroll-to="7">контакты</a></li>
                                         </ul>
                                     </nav>
                                 </div>
                                 <div class="header__links">
-                                    <a href="#" class="order-link btn" data-goto="6">заказать</a> 
-                                    <a class="hamburger-menu-link" href="#">
+                                    <a href="" class="order-link btn" data-scroll-to="6">заказать</a> 
+                                    <a class="hamburger-menu-link" href="#" >
                                         <div class="hamburger-menu-link__bars"></div>
                                     </a>
                                 <!-- <input type=button class="welcome-header__botton" value="заказать" onclick="location.href='http://vk.com'"> -->
@@ -217,7 +218,7 @@
                                                 <div class="promo__desk">рублей</div> 
                                             </div>
                                             <div class="promo__right">
-                                                <a href="#" class="order-link btn" data-goto="6">заказать</a> 
+                                                <a href="#" class="order-link btn" data-scroll-to="6">заказать</a> 
                                             </div>
                                         </div>
                                     </div>
@@ -314,7 +315,7 @@
                                                 <div class="promo__desk">рублей</div> 
                                             </div>
                                             <div class="promo__right">
-                                                <a href="#" class="order-link btn" data-goto="6">заказать</a> 
+                                                <a href="#" class="order-link btn" data-scroll-to="6">заказать</a> 
                                             </div>
                                         </div>
                                     </div>
@@ -410,7 +411,7 @@
                                                 <div class="promo__desk">рублей</div>
                                             </div>
                                             <div class="promo__right">
-                                                <a href="#" class="order-link btn" data-goto="6">заказать</a>
+                                                <a href="#" class="order-link btn" data-scroll-to="6">заказать</a>
                                             </div>
                                         </div>
                                     </div>
@@ -506,7 +507,7 @@
                                                 <div class="promo__desk">рублей</div>
                                             </div>
                                             <div class="promo__right">
-                                                <a href="#" class="order-link btn" data-goto="6">заказать</a>
+                                                <a href="#" class="order-link btn" data-scroll-to="6">заказать</a>
                                             </div>
                                         </div>
                                     </div>
@@ -602,7 +603,7 @@
                                                 <div class="promo__desk">рублей</div>
                                             </div>
                                             <div class="promo__right">
-                                                <a href="#" class="order-link btn" data-goto="6">заказать</a>
+                                                <a href="#" class="order-link btn" data-scroll-to="6">заказать</a>
                                             </div>
                                         </div>
                                     </div>
@@ -623,12 +624,12 @@
                                 </li>
                             </ul>
                             <div class="slider__controls">
-                                <a href="#" class="burgers__arrow-left" data-scroll-to="1">
+                                <a href="" class="burgers__arrow-left">
                                     <svg class="burgers__arrow-svg-left" style="fill: #fff">
                                         <use xlink:href="img/sprite.svg#arrow-scroll"></use>
                                     </svg>
                                 </a>
-                                <a href="#" class="burgers__arrow-right" data-scroll-to="1">
+                                <a href="" class="burgers__arrow-right" >
                                     <svg class="burgers__arrow-svg-right" style="fill: #fff">
                                         <use xlink:href="img/sprite.svg#arrow-scroll"></use>
                                     </svg>
@@ -786,7 +787,7 @@
                                 котлетка такой сочной, а сыр таким расплавленным.                                   
                             </div>
                             <div class="about__booton">
-                                <a href="#" class="order-link order-link--about">подробнее</a> 
+                                <a href="#full-review" class="order-link order-link--about" data-fancybox>подробнее</a> 
                                 <!-- <input type=button class="welcome-header__botton" value="заказать" onclick="location.href='http://vk.com'"> -->
                             </div>
                         </div>
@@ -800,7 +801,7 @@
                                 котлетка такой сочной, а сыр таким расплавленным.                                   
                             </div>
                             <div class="about__booton">
-                                <a href="#" class="order-link order-link--about">подробнее</a> 
+                                <a href="#full-review" class="order-link order-link--about" data-fancybox>подробнее</a> 
                                 <!-- <input type=button class="welcome-header__botton" value="заказать" onclick="location.href='http://vk.com'"> -->
                             </div>
                         </div>    
@@ -814,7 +815,7 @@
                                 котлетка такой сочной, а сыр таким расплавленным.                                   
                             </div>
                             <div class="about__booton">
-                                <a href="#" class="order-link order-link--about">подробнее</a> 
+                                <a href="#full-review" class="order-link order-link--about" data-fancybox>подробнее</a> 
                                 <!-- <input type=button class="welcome-header__botton" value="заказать" onclick="location.href='http://vk.com'"> -->
                             </div>
                         </div>     
@@ -828,7 +829,7 @@
                                 котлетка такой сочной, а сыр таким расплавленным.                                   
                             </div>
                             <div class="about__booton">
-                                <a href="#" class="order-link order-link--about">подробнее</a> 
+                                <a href="#full-review" class="order-link order-link--about" data-fancybox>подробнее</a> 
                                 <!-- <input type=button class="welcome-header__botton" value="заказать" onclick="location.href='http://vk.com'"> -->
                             </div>
                         </div>     
@@ -842,7 +843,7 @@
                                 котлетка такой сочной, а сыр таким расплавленным.                                   
                             </div>
                             <div class="about__booton">
-                                <a href="#" class="order-link order-link--about">подробнее</a> 
+                                <a href="#full-review" class="order-link order-link--about" data-fancybox>подробнее</a> 
                                 <!-- <input type=button class="welcome-header__botton" value="заказать" onclick="location.href='http://vk.com'"> -->
                             </div>
                         </div>     
@@ -856,7 +857,7 @@
                                 котлетка такой сочной, а сыр таким расплавленным.                                   
                             </div>
                             <div class="about__booton">
-                                <a href="#" class="order-link order-link--about">подробнее</a> 
+                                <a href="#full-review" class="order-link order-link--about" data-fancybox>подробнее</a> 
                                 <!-- <input type=button class="welcome-header__botton" value="заказать" onclick="location.href='http://vk.com'"> -->
                             </div>
                         </div>    
@@ -870,7 +871,7 @@
                                 котлетка такой сочной, а сыр таким расплавленным.                                   
                             </div>
                             <div class="about__booton">
-                                <a href="#" class="order-link order-link--about">подробнее</a> 
+                                <a href="#full-review" class="order-link order-link--about" data-fancybox>подробнее</a> 
                                 <!-- <input type=button class="welcome-header__botton" value="заказать" onclick="location.href='http://vk.com'"> -->
                             </div>
                         </div>    
@@ -884,7 +885,7 @@
                                 котлетка такой сочной, а сыр таким расплавленным.                                   
                             </div>
                             <div class="about__booton">
-                                <a href="#" class="order-link order-link--about">подробнее</a> 
+                                <a href="#full-review" class="order-link order-link--about" data-fancybox>подробнее</a> 
                                 <!-- <input type=button class="welcome-header__botton" value="заказать" onclick="location.href='http://vk.com'"> -->
                             </div>
                         </div>    
@@ -896,41 +897,41 @@
                 <div class="container container-order">
                     <h1 class="section__title">Закажите доставку</h1>
 
-                    <form class="order__form-tag" id="order-form">
+                    <form class="order__form-tag" action="server.php" method="post" id="order-form">
                         <div class="order__form">
                             <div class="order__form-col">
                                 <div class="order__form-row">
                                     <label class="order__form-block">
                                         <div class="order__form-label">Имя</div>
-                                        <input type="text" class="order__form-input">
+                                        <input type="text" class="order__form-input" name="user-name">
                                     </label>
                                     <label class="order__form-block">
                                         <div class="order__form-label">Телефон</div>
-                                        <input type="text" class="order__form-input">
+                                        <input type="text" class="order__form-input" name="user-phone">
                                     </label>
                                 </div>
                                 <div class="order__form-row">
                                     <label class="order__form-block">
                                         <div class="order__form-label">Улица</div>
-                                        <input type="text" class="order__form-input">
+                                        <input type="text" class="order__form-input" name="user-sreet">
                                     </label>
                                 </div>
                                 <div class="order__form-row">
                                     <label class="order__form-block">
                                         <div class="order__form-label">Дом</div>
-                                        <input type="text" class="order__form-input">
+                                        <input type="text" class="order__form-input" name="user-house">
                                     </label>
                                     <label class="order__form-block">
                                         <div class="order__form-label">Корпус</div>
-                                        <input type="text" class="order__form-input">
+                                        <input type="text" class="order__form-input" name="user-block">
                                     </label>
                                     <label class="order__form-block">
                                         <div class="order__form-label">Квартира</div>
-                                        <input type="text" class="order__form-input">
+                                        <input type="text" class="order__form-input" name="user-apart">
                                     </label>
                                     <label class="order__form-block">
-                                        <div class="order__form-label">Корпус</div>
-                                        <input type="text" class="order__form-input">
+                                        <div class="order__form-label">Этаж</div>
+                                        <input type="text" class="order__form-input" name="user-floor">
                                     </label>
                                 </div>
 
@@ -1034,7 +1035,7 @@
     </div>
 
     <ul class="fixed-menu">
-        <li class="fixed-menu__item">
+        <li class="fixed-menu__item active">
             <a class="fixed-menu__link" href="" data-scroll-to="0"></a>
         </li>
         <li class="fixed-menu__item">
@@ -1062,7 +1063,7 @@
     <div class="full-review popup" id="full-review">
         <a class="full-review__close" href="#">
             <svg class="full-review__close-btn">
-                <use xlink:href="img/sprite.svg#close"></use>
+                <use xlink:href="img/icons/close.svg"></use>
             </svg>
         </a>
         <div class="full-review__inner">
@@ -1087,13 +1088,50 @@
             <a class="status-popup__close btn" href="#">Закрыть</a>
         </div>
     </div>
-
+    <div class="fullscreenmenu">
+        <div class="container" id="fullscreenmenu">
+            <div class="fullscreen-header">
+                <div class="fullscreen__logo">
+                    <img src="img/img_welcome/logo.svg" alt="logo" class="logo__img">
+                </div>
+                <a class="fullscreen__btn" href="#">
+                    <img class="fullscreen__img" src="img/icons/menu_close.png" alt="Close button">
+                </a>
+            </div>
+            <div class="fullscreen__wrap" >
+                <ul class="fullscreen__list" >
+                    <li class="fullscreen__item">
+                        <a href="" class="fullscreen__link" data-scroll-to="1">почему мы</a>
+                    </li>
+                    <li class="fullscreen__item">
+                        <a href="" class="fullscreen__link" data-scroll-to="2">меню</a>
+                    </li>
+                    <li class="fullscreen__item">
+                        <a href="" class="fullscreen__link" data-scroll-to="3">советы</a>
+                    </li>
+                    <li class="fullscreen__item">
+                        <a href="" class="fullscreen__link" data-scroll-to="4">кто мы</a>
+                    </li>
+                    <li class="fullscreen__item">
+                        <a href="" class="fullscreen__link" data-scroll-to="5">свяжитесь с нами</a>
+                    </li>
+                    <li class="fullscreen__item">
+                        <a href="" class="fullscreen__link" data-scroll-to="7">контакты</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>        
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/jquery.bxslider.min.js" type="text/javascript"></script>
+    <script src="js/jquery.fancybox.min.js" type="text/javascript"></script>
+    <script src="js/jquery.touchSwipe.min.js" type="text/javascript"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.7/mobile-detect.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
     </script>
-    
+    <script src="js/common.js" type="text/javascript"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

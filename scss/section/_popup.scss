@@ -3,8 +3,11 @@
 }
 
 .full-review {
+    max-width: 460px;
+    min-height: 255px;
     padding: rem(25px) rem(20px);
     position: relative;
+    border-radius: 5px;
 }
 
 .full-review__title {
