@@ -299,11 +299,11 @@ $(function () {
 
         // console.log(fullMenu);
 
-        if (!fullMenu.hasClass('.active')) {
+        if (!fullMenu.hasClass('active')) {
             // fullMenu.removeClass('.active');
             fullMenu.addClass('active');
         } else {
-            fullMenu.removeClass('.active');
+            fullMenu.removeClass('active');
         }
     });
 
@@ -315,9 +315,10 @@ $(function () {
         // console.log(closeMenu);
         
         fullMenu.css({
-            'height': 0 
+            'height': 0 ,
+            'transition' : 1 + 's'
         });
-        // fullMenu.removeClass('.active');
+        fullMenu.removeClass('active');
     });
 
     // ---- работаем с пунктами меню
@@ -330,7 +331,7 @@ $(function () {
         fullMenu.css({
             'height': 0
         });
-        // fullMenu.removeClass('.active');
+        fullMenu.removeClass('active');
     });
 
 
