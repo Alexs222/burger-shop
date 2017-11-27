@@ -17,18 +17,18 @@ var submitForm = function (e) {
         type: 'POST',
         url: url,
         data: data,
-        // dataType : 'JSON'
+        dataType : 'JSON'
     });
 
     request.done(function(msg) {
         alert(msg);
-        // var mes = msg.mes,
-        //     status = msg.status;
-        // if (status === 'OK') {
-        //     form.append('<p class="success">' + mes + '</p>');
-        // } else {
-        //     form.append('<p class="error">' + mes + '</p>');
-        // }
+        var mes = msg.mes,
+            status = msg.status;
+        if (status === 'OK') {
+            form.append('<p class="success">' + mes + '</p>');
+        } else {
+            form.append('<p class="error">' + mes + '</p>');
+        }
     });
 
     request.fail(function(jqXHR, textStatus) {
